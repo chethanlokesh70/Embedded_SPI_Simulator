@@ -1,5 +1,5 @@
-#include <spi_master.h>
-#include <spi_slave.h>
+#include "spi_master.h"
+#include "spi_slave.h"
 
 uint8_t MISO = 0;
 uint8_t MOSI = 0;

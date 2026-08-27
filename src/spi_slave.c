@@ -1,5 +1,5 @@
-#include <spi_master.h>
-#include <spi_slave.h>
+#include "spi_master.h"
+#include "spi_slave.h"
 
 static uint8_t response = 0x5A;
 static int bit_index = 7;
