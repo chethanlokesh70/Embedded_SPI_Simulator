@@ -14,7 +14,7 @@ uint8_t SPI_transfer(uint8_t data){
         MOSI = (data>>i) & 1;
         SCLK = 1;
         MISO = Slave_processBit(MOSI);
-        rx_data |= (MISO << 1);
+        rx_data |= (MISO << i);
         SCLK = 0;
     }
     CS = 1;
